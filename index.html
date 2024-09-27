@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Travel Adventure</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom animations */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-up {
+      animation: fadeInUp 1s ease-out;
+    }
+
+    /* Hover animation for buttons */
+    .btn-hover:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Asymmetry grid */
+    .asymmetry {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      grid-gap: 20px;
+    }
+
+    /* Hero Section Gradient */
+    .hero-gradient {
+      background: linear-gradient(135deg, rgba(243, 230, 217, 0.7), rgba(162, 128, 99, 0.5)), url('https://example.com/your-hero-image.jpg');
+      background-blend-mode: overlay;
+      background-position: center;
+      background-size: cover;
+    }
+
+    /* Gradient Button */
+    .btn-gradient {
+      background: linear-gradient(90deg, rgba(162, 128, 99, 0.9), rgba(214, 181, 150, 0.9));
+    }
+
+    /* Font for headings */
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-[#f3e6d9]">
+
+  <!-- Navbar -->
+  <nav class="bg-[#d2b49c] shadow-md sticky top-0 z-50 border-b-2 border-[#5a4630]">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <a class="text-2xl font-bold text-[#5a4630] tracking-wider">Travel Adventure</a>
+        </div>
+        <div class="hidden md:flex space-x-4">
+          <a href="index.html" class="rounded-md bg-[#5a4630] px-3 py-2 text-sm font-medium text-white transition duration-300 hover:bg-[#8d7359]">Home</a>
+          <a href="tourpackage.html" class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:text-[#8d7359]">Tour Package</a>
+          <a href="booking.html" class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:text-[#8d7359]">Booking</a>
+          <a href="blog.html" class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:text-[#8d7359]">Blog</a>
+          <a href="about.html" class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:text-[#8d7359]">About Us</a>
+          <a href="contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:text-[#8d7359]">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative h-screen bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('home.jpg');">
+    <!-- Overlay untuk membuat gambar lebih gelap -->
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+
+    <!-- Konten di atas gambar dan overlay -->
+    <div class="relative z-10 text-[#f3e6d9]">
+      <h1 class="text-6xl font-bold mb-6 drop-shadow-md">Discover New Adventures</h1>
+      <p class="text-2xl mb-8 drop-shadow-md">Your journey begins here. Let's explore the world together.</p>
+      <a href="tourpackage.html" class="px-6 py-3 text-lg font-semibold rounded-md text-white bg-[#5a4630] hover:bg-[#8d7359]">View Our Tours</a>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section class="py-16 bg-[#f3e6d9]">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-[#5a4630] mb-12">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Tour Packages -->
+        <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-[#5a4630]">
+          <h3 class="text-2xl font-bold text-[#5a4630] mb-4">Tailored Tour Packages</h3>
+          <p class="text-[#8d7359]">Custom curated trips for every type of traveler. Experience unforgettable adventures designed just for you.</p>
+          <a href="tourpackage.html" class="mt-4 inline-block text-[#5a4630] hover:text-[#8d7359]">Learn More</a>
+        </div>
+        <!-- Booking -->
+        <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-[#8d7359]">
+          <h3 class="text-2xl font-bold text-[#5a4630] mb-4">Easy & Secure Booking</h3>
+          <p class="text-[#8d7359]">Quick and secure bookings for a stress-free experience. Let us handle the logistics while you enjoy the journey.</p>
+          <a href="booking.html" class="mt-4 inline-block text-[#5a4630] hover:text-[#8d7359]">Book Now</a>
+        </div>
+        <!-- Blog -->
+        <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-[#d2b49c]">
+          <h3 class="text-2xl font-bold text-[#5a4630] mb-4">Inspiring Travel Blog</h3>
+          <p class="text-[#8d7359]">Stay informed and inspired with our travel blog. Get tips, insights, and stories from our travel experts.</p>
+          <a href="blog.html" class="mt-4 inline-block text-[#5a4630] hover:text-[#8d7359]">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="py-16 bg-[#5a4630] text-white text-center">
+    <div class="container mx-auto">
+      <h2 class="text-5xl font-bold mb-6">Ready for your next adventure?</h2>
+      <p class="text-lg mb-8">Explore unique travel packages designed to help you discover the best of the world.</p>
+      <a href="booking.html" class="px-6 py-3 text-lg font-semibold rounded-md bg-white text-[#5a4630] btn-hover">Book Your Adventure</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#8d7359] text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Travel Adventure. All rights reserved.</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="#" class="hover:text-[#f3e6d9]">Facebook</a>
+        <a href="#" class="hover:text-[#f3e6d9]">Instagram</a>
+        <a href="#" class="hover:text-[#f3e6d9]">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

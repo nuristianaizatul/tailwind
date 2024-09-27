@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Travel Adventure</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f3e6d9]"> <!-- Background coklat soft -->
+  <nav class="bg-[#d2b49c] shadow-md sticky top-0 z-50 border-b-2 border-[#5a4630]">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <a class="text-xl font-bold text-[#5a4630]">Travel Adventure</a>
+        </div>
+        <div class="hidden md:flex space-x-4">
+          <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Home</a>
+          <a href="tourpackage.html" class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Tour Package</a>
+          <a href="booking.html" class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Booking</a>
+          <a href="blog.html" class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Blog</a>
+          <a href="about.html" class="block rounded-md bg-[#5a4630] px-3 py-2 text-base font-medium text-white" aria-current="page">About Us</a>
+          <a href="contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Contact Us</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="flex md:hidden">
+          <button id="mobile-menu-button" class="text-[#5a4630] hover:text-[#8d7359] focus:outline-none">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+        <a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Home</a>
+        <a href="tourpackage.html" class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Tour Package</a>
+        <a href="booking.html" class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Booking</a>
+        <a href="blog.html" class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Blog</a>
+        <a href="about.html" class="block rounded-md bg-[#5a4630] px-3 py-2 text-base font-medium text-white" aria-current="page">About Us</a>
+        <a href="contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Us Content -->
+  <section class="py-16">
+    <div class="container mx-auto">
+      <!-- Company Overview -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-[#5a4630]">Who We Are</h2>
+        <p class="text-[#8d7359] mt-4 leading-relaxed max-w-2xl mx-auto">
+          Travel Adventure is a leading travel agency, dedicated to providing extraordinary travel experiences. Our passionate team ensures that every journey we craft brings joy, adventure, and a lifetime of memories.
+        </p>
+      </div>
+
+      <!-- Mission and Vision Section -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+        <!-- Mission -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-[#5a4630] mb-4">Our Mission</h3>
+          <p class="text-[#8d7359] leading-relaxed">
+            We aim to create authentic, transformative travel experiences. Whether it’s a luxurious escape or an adventurous trek, we ensure each trip is personalized, safe, and sustainable.
+          </p>
+        </div>
+
+        <!-- Vision -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-[#5a4630] mb-4">Our Vision</h3>
+          <p class="text-[#8d7359] leading-relaxed">
+            We aspire to make travel more accessible and meaningful, building a world where exploration leads to personal growth and global connections.
+          </p>
+        </div>
+      </div>
+
+      <!-- Meet Our Team -->
+      <div class="text-center mb-10">
+        <h2 class="text-4xl font-bold text-[#5a4630]">Meet Our Team</h2>
+        <p class="text-[#8d7359] mt-4 leading-relaxed max-w-xl mx-auto">
+          Our dedicated team is passionate about making your travel dreams come true. Meet the people who bring Travel Adventure to life!
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Team Member 1 -->
+<div class="bg-white p-6 rounded-lg shadow-lg team-card transform hover:shadow-xl">
+  <img src="pf.jpeg" alt="nuristiana" class="w-32 h-32 rounded-full mx-auto mb-4 team-photo">
+  <h3 class="text-xl font-semibold text-center text-[#5a4630]">Nuristiana</h3>
+  <p class="text-center text-[#8d7359]">Founder & CEO</p>
+  <div class="text-center mt-4">
+    <a href="#" class="text-[#5a4630] hover:text-[#8d7359]">LinkedIn</a>
+  </div>
+</div>
+
+<!-- Team Member 2 -->
+<div class="bg-white p-6 rounded-lg shadow-lg team-card transform hover:shadow-xl">
+  <img src="pf.jpeg" alt="nuristiana" class="w-32 h-32 rounded-full mx-auto mb-4 team-photo">
+  <h3 class="text-xl font-semibold text-center text-[#5a4630]">Nuristiana</h3>
+  <p class="text-center text-[#8d7359]">Head of Operations</p>
+  <div class="text-center mt-4">
+    <a href="#" class="text-[#5a4630] hover:text-[#8d7359]">LinkedIn</a>
+  </div>
+</div>
+
+<!-- Team Member 3 -->
+<div class="bg-white p-6 rounded-lg shadow-lg team-card transform hover:shadow-xl">
+  <img src="pf.jpeg" alt="nuristiana" class="w-32 h-32 rounded-full mx-auto mb-4 team-photo">
+  <h3 class="text-xl font-semibold text-center text-[#5a4630]">Nuristiana</h3>
+  <p class="text-center text-[#8d7359]">Customer Experience Manager</p>
+  <div class="text-center mt-4">
+    <a href="#" class="text-[#5a4630] hover:text-[#8d7359]">LinkedIn</a>
+  </div>
+</div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#5a4630] text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Travel Adventure. All rights reserved.</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="#" class="hover:text-[#d2b49c]">Facebook</a>
+        <a href="#" class="hover:text-[#d2b49c]">Instagram</a>
+        <a href="#" class="hover:text-[#d2b49c]">Twitter</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

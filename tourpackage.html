@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tour Packages</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom Styles for Soft Brown Aesthetic */
+      :root {
+        --soft-brown: #D2B48C;
+        --light-brown: #F5DEB3;
+        --dark-brown: #8B4513;
+        --medium-brown: #A0522D;
+        --text-color: #5C4033;
+      }
+
+      body {
+        background-color: var(--light-brown);
+        color: var(--text-color);
+      }
+
+      nav, footer {
+        background-color: var(--soft-brown);
+      }
+
+      a {
+        color: var(--text-color);
+      }
+
+      .btn-primary {
+        background-color: var(--medium-brown);
+        border-color: var(--medium-brown);
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background-color: var(--dark-brown);
+        border-color: var(--dark-brown);
+      }
+
+      h1, h2 {
+        color: var(--dark-brown);
+      }
+
+      .bg-custom-brown {
+        background-color: var(--soft-brown);
+      }
+
+      .text-custom-brown {
+        color: var(--dark-brown);
+      }
+
+      a:hover {
+        background-color: var(--dark-brown);
+        color: white;
+      }
+
+      /* Smooth transition for buttons and links */
+      .transition {
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light-brown">
+
+  <nav class="bg-[#d2b49c] shadow-md sticky top-0 z-50 border-b-2 border-[#5a4630]">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <a class="text-xl font-bold text-[#5a4630]">Travel Adventure</a>
+        </div>
+        <div class="hidden md:flex space-x-4">
+          <a href="index.html"class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white" >Home</a>
+         <a href="tourpackage.html" class="block rounded-md bg-[#5a4630] px-3 py-2 text-base font-medium text-white" aria-current="page">Tour Package</a>
+          <a href="booking.html" class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Booking</a>
+          <a href="blog.html" class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Blog</a>
+          <a href="about.html" class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">About Us</a>
+          <a href="contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Contact Us</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="flex md:hidden">
+          <button id="mobile-menu-button" class="text-[#5a4630] hover:text-[#8d7359] focus:outline-none">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+        <a href="index.html" class="block rounded-md bg-[#5a4630] px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
+        <a href="tourpackage.html" class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Tour Package</a>
+        <a href="booking.html" class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Booking</a>
+        <a href="blog.html" class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Blog</a>
+        <a href="about.html" class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">About Us</a>
+        <a href="contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-5 bg-custom-brown text-white">
+        <div class="container">
+            <h1 class="text-4xl font-bold">Explore Stunning Nature</h1>
+            <p class="text-lg mt-2">Discover the beauty of Indonesia's pristine beaches and majestic mountains</p>
+        </div>
+    </section>
+
+    <!-- Pantai Section -->
+    <section id="pantai" class="py-10 bg-light-brown">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="beach.jpeg" alt="Pantai" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="col-lg-6 mt-4 lg:mt-0">
+                    <h2 class="text-3xl font-bold text-dark-brown">Paket Wisata Pantai</h2>
+                    <p class="text-lg mt-4">Nikmati keindahan pantai pasir putih yang membentang luas di depan mata Anda. Suara deburan ombak dan angin laut yang sepoi-sepoi akan membuat liburan Anda sempurna. Destinasi ini sangat cocok untuk bersantai dan mengisi ulang energi Anda.</p>
+                    <p class="mt-2">Pantai ini juga terkenal dengan snorkeling dan diving spot-nya yang menawarkan pemandangan bawah laut yang menakjubkan.</p>
+                    <a href="beach.html" class="bg-[#8d7359] hover:bg-[#5a4630] text-white font-bold py-2 px-4 rounded-full mt-4 btn btn-primary transition">Lihat Selengkapnya --></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gunung Section -->
+    <section id="gunung" class="py-10 bg-light-brown">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="mount.jpeg" alt="Gunung" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="col-lg-6 mt-4 lg:mt-0 order-lg-1">
+                    <h2 class="text-3xl font-bold text-dark-brown">Paket Wisata Gunung</h2>
+                    <p class="text-lg mt-4">Rasakan petualangan mendaki gunung yang memukau dengan pemandangan alam yang mempesona. Udara segar dan suasana yang tenang membuat perjalanan Anda semakin bermakna. Paket ini sangat cocok untuk Anda yang menyukai tantangan dan keindahan alam.</p>
+                    <p class="mt-2">Puncak gunung menawarkan pemandangan sunrise yang spektakuler, pengalaman yang tidak akan terlupakan.</p>
+                    <a href="mount.html" class="bg-[#8d7359] hover:bg-[#5a4630] text-white font-bold py-2 px-4 rounded-full mt-4 btn btn-primary transition">Lihat Selengkapnya --></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-4 bg-soft-brown">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Tour Packages. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

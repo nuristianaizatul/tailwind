@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Travel: Destinasi Wisata Terbaik di Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .bg-custom {
+            background: linear-gradient(to right, #f4ece3, #e4dcd2);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #a58973, #d4b49a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-custom">
+    <!-- Navbar -->
+    <nav class="bg-[#d2b49c] shadow-md sticky top-0 z-50 border-b-2 border-[#5a4630]">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a class="text-xl font-bold text-[#5a4630]">Travel Adventure</a>
+                </div>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="rounded-md bg-[#5a4630] px-3 py-2 text-sm font-medium text-white">Home</a>
+                    <a href="tourpackage.html"
+                        class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Tour
+                        Package</a>
+                    <a href="booking.html"
+                        class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Booking</a>
+                    <a href="blog.html"
+                       class="rounded-md bg-[#5a4630] px-3 py-2 text-sm font-medium text-white"
+                        aria-current="page" >Blog</a>
+                    <a href="about.html"
+                        class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">About
+                        Us</a>
+                    <a href="contact.html"
+                        class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Contact
+                        Us</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="flex md:hidden">
+                    <button id="mobile-menu-button" class="text-[#5a4630] hover:text-[#8d7359] focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+                <a href="index.html">Home</a>
+                <a href="tourpackage.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Tour
+                    Package</a>
+                <a href="booking.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Booking</a>
+                <a href="blog.html"
+                    class="block rounded-md bg-[#5a4630] px-3 py-2 text-base font-medium text-white">Blog</a>
+                <a href="about.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">About
+                    Us</a>
+                <a href="contact.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-[#a58973] py-8">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold text-white">Blog Travel</h1>
+            <p class="text-white mt-2">Menjelajahi Keindahan Alam Indonesia</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <main class="container mx-auto py-12 px-6">
+        <article class="bg-[#f9f2ec] rounded-lg shadow-lg p-8 mb-8">
+            <h2 class="text-4xl font-bold text-[#a58973] mb-4">Tropical Beach</h2>
+            <img src="beach.jpeg" alt="Pantai" class="rounded-lg mb-4 shadow-lg">
+            <p class="text-[#5a4630] mb-4">Indonesia memiliki banyak pantai indah yang memikat wisatawan lokal maupun
+                mancanegara. Berikut adalah tujuh pantai terbaik di Indonesia yang terkenal karena keindahan alamnya:</p>
+            <ul class="list-disc pl-5 mb-4 text-[#5a4630]">
+                <li><strong>Pantai Kelingking, Nusa Penida</strong> - Tebing berbentuk seperti kepala T-Rex yang menjulang
+                    di atas air laut biru cerah.</li>
+                <li><strong>Pantai Pink, Pulau Komodo</strong> - Pasir pantai berwarna merah muda yang jarang ditemukan di
+                    tempat lain.</li>
+                <li><strong>Pantai Tanjung Aan, Lombok</strong> - Pasir sehalus merica dan air laut biru kehijauan.</li>
+                <li><strong>Pantai Nihiwatu, Sumba</strong> - Pantai terbaik di dunia dengan ombak kelas dunia untuk
+                    surfing.</li>
+                <li><strong>Pantai Tanjung Tinggi, Belitung</strong> - Batu granit raksasa dengan air laut biru yang
+                    tenang.</li>
+                <li><strong>Pantai Derawan, Kalimantan Timur</strong> - Terumbu karang yang memukau dan penyu yang sering
+                    muncul.</li>
+                <li><strong>Pantai Gili Meno, Lombok</strong> - Suasana tenang dengan keindahan bawah laut yang memikat.
+                </li>
+            </ul>
+            <p class="text-[#5a4630] mb-4">Setiap pantai menawarkan keindahan dan pengalaman unik bagi pengunjung.
+                Pastikan untuk merencanakan perjalananmu untuk menikmati semua keindahan ini!</p>
+            <a href="beach.html"
+                class="inline-block bg-[#a58973] text-white font-semibold py-2 px-4 rounded-lg hover:bg-[#8d7359] transition duration-300">Baca
+                Selengkapnya</a>
+        </article>
+
+        <article class="bg-[#f9f2ec] rounded-lg shadow-lg p-8 mb-8">
+            <h2 class="text-4xl font-bold text-[#a58973] mb-4">Mountain Adventure</h2>
+            <img src="mount.jpeg" alt="Gunung" class="rounded-lg mb-4 shadow-lg">
+            <p class="text-[#5a4630] mb-4">Indonesia terkenal dengan gunung-gunungnya yang menantang dan indah. Berikut
+                adalah tujuh gunung terpopuler di Indonesia yang menjadi tujuan favorit para pendaki:</p>
+            <ul class="list-disc pl-5 mb-4 text-[#5a4630]">
+                <li><strong>Gunung Rinjani, Lombok</strong> - Memiliki kawah besar dan Danau Segara Anak yang indah.</li>
+                <li><strong>Gunung Semeru, Jawa Timur</strong> - Puncak Mahameru, dengan lanskap vulkanik aktif.</li>
+                <li><strong>Gunung Bromo, Jawa Timur</strong> - Pemandangan matahari terbit yang sangat terkenal.</li>
+                <li><strong>Gunung Merbabu, Jawa Tengah</strong> - Jalur pendakian yang bersahabat dengan pemandangan yang
+                    luar biasa.</li>
+                <li><strong>Gunung Merapi, Yogyakarta</strong> - Salah satu gunung berapi paling aktif di Indonesia.</li>
+                <li><strong>Gunung Ijen, Jawa Timur</strong> - Fenomena blue fire yang sangat langka.</li>
+                <li><strong>Gunung Papandayan, Garut</strong> - Trekking ringan cocok untuk pendaki pemula.</li>
+            </ul>
+            <p class="text-[#5a4630] mb-4">Setiap gunung memiliki keunikan dan tantangannya masing-masing, menjadikannya
+                destinasi impian bagi para petualang.</p>
+            <a href="mount.html"
+                class="inline-block bg-[#a58973] text-white font-semibold py-2 px-4 rounded-lg hover:bg-[#8d7359] transition duration-300">Baca
+                Selengkapnya</a>
+        </article>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#5a4630] py-4">
+        <div class="container mx-auto text-center">
+            <p class="text-white">© 2024 Blog Travel Indonesia. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Booking Travel Wisata Indonesia</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hover-effect:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #c6a992, #c8b4a4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #f4ece3 0%, #e4dcd2 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-[#f4ece3] to-[#e4dcd2] min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-[#d2b49c] shadow-md sticky top-0 z-50 border-b-2 border-[#5a4630]">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a class="text-xl font-bold text-[#5a4630]">Travel Adventure</a>
+                </div>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Home</a>
+                    <a href="tourpackage.html"
+                        class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Tour
+                        Package</a>
+                    <a href="booking.html"
+                       class="rounded-md bg-[#5a4630] px-3 py-2 text-sm font-medium text-white"
+                        aria-current="page" >Booking</a>
+                    <a href="blog.html"
+                        class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Blog</a>
+                    <a href="about.html"
+                        class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">About
+                        Us</a>
+                    <a href="contact.html"
+                        class="rounded-md px-3 py-2 text-sm font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Contact
+                        Us</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="flex md:hidden">
+                    <button id="mobile-menu-button" class="text-[#5a4630] hover:text-[#8d7359] focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+                <a href="index.html">Home</a>
+                <a href="tourpackage.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Tour
+                    Package</a>
+                <a href="booking.html"
+                    class="block rounded-md bg-[#5a4630] px-3 py-2 text-base font-medium text-white" aria-current="page"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Booking</a>
+                <a href="blog.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Blog</a>
+                <a href="about.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">About
+                    Us</a>
+                <a href="contact.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-[#5a4630] hover:bg-[#8d7359] hover:text-white">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="gradient-bg py-16 text-center">
+        <h1 class="text-5xl font-bold text-gradient">Booking Travel Wisata Gunung dan Pantai</h1>
+        <p class="mt-4 text-gray-600 text-lg italic">Pesan Paket Wisata dan Nikmati Keindahan Alam Indonesia</p>
+    </header>
+
+    <!-- Booking Form Section -->
+    <main class="container mx-auto py-12 px-6">
+        <!-- Booking Form -->
+        <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-[#a58973] text-center mb-6">Form Pemesanan Travel</h2>
+            <form id="booking-form" class="space-y-6">
+                <!-- Nama Lengkap -->
+                <div>
+                    <label for="name" class="block text-lg font-medium text-gray-700">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" required
+                        class="mt-1 block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#a58973] focus:border-[#a58973] shadow-sm">
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block text-lg font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" required
+                        class="mt-1 block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#a58973] focus:border-[#a58973] shadow-sm">
+                </div>
+
+                <!-- Nomor Telepon -->
+                <div>
+                    <label for="phone" class="block text-lg font-medium text-gray-700">Nomor Telepon</label>
+                    <input type="tel" id="phone" name="phone" required
+                        class="mt-1 block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#a58973] focus:border-[#a58973] shadow-sm">
+                </div>
+
+                <!-- Pilih Jenis Wisata -->
+                <div>
+                    <label for="tourType" class="block text-lg font-medium text-gray-700">Pilih Jenis Wisata</label>
+                    <select id="tourType" name="tourType" required
+                        class="mt-1 block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#a58973] focus:border-[#a58973] shadow-sm">
+                        <option value="gunung">Wisata Gunung</option>
+                        <option value="pantai">Wisata Pantai</option>
+                    </select>
+                </div>
+
+                <!-- Pilih Destinasi (Gunung / Pantai) -->
+                <div>
+                    <label for="destination" class="block text-lg font-medium text-gray-700">Pilih Destinasi</label>
+                    <select id="destination" name="destination" required
+                        class="mt-1 block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#a58973] focus:border-[#a58973] shadow-sm">
+                        <!-- Destinasi Gunung -->
+                        <optgroup label="Gunung">
+                            <option value="Gunung Rinjani" data-price="500000">Gunung Rinjani - Rp 500.000</option>
+                            <option value="Gunung Semeru" data-price="600000">Gunung Semeru - Rp 600.000</option>
+                            <option value="Gunung Bromo" data-price="400000">Gunung Bromo - Rp 400.000</option>
+                            <option value="Gunung Merbabu" data-price="350000">Gunung Merbabu - Rp 350.000</option>
+                            <option value="Gunung Merapi" data-price="450000">Gunung Merapi - Rp 450.000</option>
+                            <option value="Gunung Ijen" data-price="550000">Gunung Ijen - Rp 550.000</option>
+                            <option value="Gunung Papandayan" data-price="300000">Gunung Papandayan - Rp 300.000</option>
+                        </optgroup>
+                        <!-- Destinasi Pantai -->
+                        <optgroup label="Pantai">
+                            <option value="Pantai Kelingking" data-price="350000">Pantai Kelingking - Rp 350.000</option>
+                            <option value="Pantai Pink" data-price="400000">Pantai Pink - Rp 400.000</option>
+                            <option value="Pantai Tanjung Aan" data-price="300000">Pantai Tanjung Aan - Rp 300.000</option>
+                            <option value="Pantai Nihiwatu" data-price="500000">Pantai Nihiwatu - Rp 500.000</option>
+                            <option value="Pantai Tanjung Tinggi" data-price="250000">Pantai Tanjung Tinggi - Rp 250.000</option>
+                            <option value="Pantai Derawan" data-price="450000">Pantai Derawan - Rp 450.000</option>
+                            <option value="Pantai Gili Meno" data-price="400000">Pantai Gili Meno - Rp 400.000</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <!-- Tanggal Berangkat -->
+                <div>
+                    <label for="departureDate" class="block text-lg font-medium text-gray-700">Tanggal Berangkat</label>
+                    <input type="date" id="departureDate" name="departureDate" required
+                        class="mt-1 block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#a58973] focus:border-[#a58973] shadow-sm">
+                </div>
+
+                <!-- Jumlah Wisatawan -->
+                <div>
+                    <label for="numberOfTravellers" class="block text-lg font-medium text-gray-700">Jumlah Wisatawan</label>
+                    <input type="number" id="numberOfTravellers" name="numberOfTravellers" required min="1"
+                        class="mt-1 block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#a58973] focus:border-[#a58973] shadow-sm">
+                </div>
+
+                <!-- Total Harga -->
+                <div>
+                    <label for="totalPrice" class="block text-lg font-medium text-gray-700">Total Harga</label>
+                    <input type="text" id="totalPrice" name="totalPrice" readonly
+                        class="mt-1 block w-full p-3 border border-gray-300 rounded-lg focus:ring-[#a58973] focus:border-[#a58973] shadow-sm">
+                </div>
+
+                <!-- Button Pesan Sekarang -->
+                <div class="text-center">
+    <button type="submit"
+        class="bg-[#5a4630] text-white px-6 py-3 rounded-lg hover:bg-[#8d7359] transition-all"
+        id="submitBookingButton">Pesan Sekarang</button>
+</div>
+
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#d2b49c] text-[#5a4630] py-4 text-center">
+        <p>&copy; 2024 Travel Adventure. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    
+        // Calculate total price
+        const tourTypeSelect = document.getElementById('tourType');
+        const destinationSelect = document.getElementById('destination');
+        const numberOfTravellersInput = document.getElementById('numberOfTravellers');
+        const totalPriceInput = document.getElementById('totalPrice');
+    
+        destinationSelect.addEventListener('change', updateTotalPrice);
+        numberOfTravellersInput.addEventListener('input', updateTotalPrice);
+    
+        function updateTotalPrice() {
+            const selectedDestination = destinationSelect.options[destinationSelect.selectedIndex];
+            const pricePerPerson = parseFloat(selectedDestination.getAttribute('data-price')) || 0;
+            const numberOfTravellers = parseInt(numberOfTravellersInput.value) || 1;
+            const totalPrice = pricePerPerson * numberOfTravellers;
+            totalPriceInput.value = `Rp ${totalPrice.toLocaleString('id-ID')}`;
+        }
+    
+        // Handle form submission
+        const bookingForm = document.getElementById('booking-form');
+    
+        bookingForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from reloading the page
+    
+            // Simulate a form submission and redirect to success page
+            setTimeout(() => {
+                window.location.href = "success.html"; // Redirect to success page
+            }, 1000); // Add delay before redirection for better UX
+        });
+    </script>
+    
+</body>
+
+</html>
